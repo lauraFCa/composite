@@ -6,4 +6,4 @@ Usado quando se vai compor um objeto para gerar um objeto.
 *Sistema*: Respiratório, Digestivo, Circulatório, etc.  
 *Órgãos*: Apendice, Pulmão, Cérebro, etc.
 
-![Diagrama de classes](composite.png)
+![Diagrama de classes](compositeFix.png)
