@@ -16,7 +16,7 @@ public class SolicitacaoExameTests {
     }
 
     @Test
-    void deveRetornarSolicitacaoDeExameCorretas(){
+    void deveRetornarSolicitacaoDeExameCorreta(){
         SistemaHumano respiratorio = new SistemaHumano("Sistema Respiratorio");
         Orgao pulmao = new Orgao("Pulmao");
         respiratorio.addParteInterna(pulmao);
@@ -28,8 +28,6 @@ public class SolicitacaoExameTests {
         digestorio.addParteInterna(intestinoDelgado);
 
         SistemaHumano sistemaNervoso = new SistemaHumano("Sistema Nervoso");
-        Orgao cerebro = new Orgao("Cerebro");
-        sistemaNervoso.addParteInterna(cerebro);
 
         SistemaHumano geral = new SistemaHumano("Corpo Humano");
         geral.addParteInterna(respiratorio);
@@ -45,8 +43,7 @@ public class SolicitacaoExameTests {
                 "Parte: Sistema Digestorio\n" +
                 "Orgao: Estomago\n" +
                 "Orgao: Intestino delgado\n" +
-                "Parte: Sistema Nervoso\n" +
-                "Orgao: Cerebro\n", corpoHumano.getPartes().getParteInterna());
+                "Parte: Sistema Nervoso\n", corpoHumano.getPartes().getParteInterna());
 
     }
 }
